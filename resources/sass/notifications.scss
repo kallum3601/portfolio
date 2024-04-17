@@ -1,0 +1,44 @@
+#notifications-container{
+    position: absolute;
+    display: none;
+    bottom: 0;
+    right: 1%;
+    background-color: black;
+    height: fit-content;
+    max-height: 40vh;
+    width: 20%;
+    overflow-y: auto;
+    z-index: 500;
+    border-radius: 10px 10px 0px 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.200);
+    border-left: 1px solid rgba(255, 255, 255, 0.200);
+    border-right: 1px solid rgba(255, 255, 255, 0.200);
+
+    #notifications-entries{
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .notifications-entry{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.200);
+
+        p{
+            margin: 0;
+            padding-right: 5px;
+            font-size: 0.9rem;
+        }
+
+        img{
+            width: 9%;
+            padding: 5px;
+        }
+    }
+}

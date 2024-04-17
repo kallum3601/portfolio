@@ -1,0 +1,122 @@
+// Fonts and body START
+// Reduce to one class for all containers if have time...
+button, #about-me-container, #portfolio-container, #blog-all-container, #blog-view-container, #notifications-container, .mouse-display-box, #login-form-container, #admin-panel-container, #reference-form-container, #testimonial-form-container, #testimonial-text{
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+}
+
+#references-container{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+// Fonts and body END
+
+// Background Image Style START
+#bg-image-container{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    z-index: -500;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+#bg-image-curtain{
+    position: fixed;
+    display: flex;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -499;
+}
+// Background Image Style END
+
+#about-me-container, #portfolio-container, #blog-all-container, #blog-view-container{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.900);
+    color: white;
+    top: 2.5vh;
+    left: 10%;
+    height: 95vh;
+    max-height: 95vh;
+    overflow-y: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 88%;
+    max-width: 88%;
+}
+
+// Blog/Portfolio Statuses START
+.status-orange, .status-yellow, .status-green, .status-blue, .status-red{
+    color: black;
+    padding: 0px 3px 2px 3px;
+    border-radius: 10px;
+
+}
+
+.status-orange{
+    background-color: orange;
+}
+
+.status-yellow{
+    background-color: yellow;
+}
+
+.status-green{
+    background-color: green; 
+}
+
+.status-blue{
+    background-color: blue; 
+}
+
+.status-red{
+    background-color: red;
+}
+// Blog/Portfolio Statuses END
+
+// Link Styles START
+a:link {
+    color: yellow;
+  }
+  
+  a:visited {
+    color: darkred;
+  }
+  
+  a:active {
+    color: darkred; 
+  }
+// Link Styles END
+
+@media screen and (min-width: 2000px) and (max-width: 2900px) {
+    #about-me-container, #portfolio-container, #blog-all-container, #blog-view-container{
+        left: 6.5%;
+        width: 92%;
+        max-width: 92%;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 700px) {
+    body{
+        overflow: auto !important;
+    }
+}
+
+

@@ -1,0 +1,17 @@
+.mouse-display-box{
+    position: absolute;
+    display: none;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    color: yellow;
+    z-index: 100;
+
+    h5{
+        margin: 5px;
+    }
+}

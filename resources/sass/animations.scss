@@ -1,0 +1,148 @@
+// Nav Animations START
+.slideFromLeft100{
+    animation: slideFromLeft100 1s ease-in;
+}
+
+.slideFromLeft500{
+    animation: slideFromLeft500 1s ease-in;
+}
+
+.logoHover{
+    animation: logoHover 5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slideFromLeft100{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromLeft500{
+    0%{
+        transform: translateX(-500%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes logoHover {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes logoHover2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+// Nav Animations END
+
+// Testimonial Animations START
+.showTestimonial{
+    animation: showTestimonial 1s ease-in;
+}
+
+.hideTestimonial{
+    animation: hideTestimonial 1s ease-out;
+}
+
+@keyframes showTestimonial{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes hideTestimonial{
+    0%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
+}
+// Testimonial Animations END
+
+// Section Animations START
+.slideFromRight100{
+    animation: slideFromRight100 3s ease;
+}
+
+@keyframes slideFromRight100{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+// Section Animations END
+
+// Blog Animations START
+.bounce {
+    animation: bounce 5s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(-20px); 
+    }
+    20% {
+        transform: translateY(0); 
+    }
+    30% {
+        transform: translateY(-10px); 
+    }
+    40%, 50%, 60%, 70%, 80%, 90% {
+        transform: translateY(0); 
+    }
+}
+// Blog Animations END
+
+// Notifications Animations START
+.slideFromBottom{
+    animation: slideFromBottom 1s ease;
+}
+
+@keyframes slideFromBottom{
+    0%{
+        transform:translateY(100%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+// Notifications Animations END

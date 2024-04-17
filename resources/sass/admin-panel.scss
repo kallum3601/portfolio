@@ -1,0 +1,124 @@
+#admin-panel-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 95%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.900);
+    margin: auto; 
+    color: white;
+
+    overflow: auto;
+
+    button{
+        cursor: pointer;
+        margin: 10px 0px 10px 0px;
+    }
+
+    #admin-visitors-container, #admin-testimonials-container, #admin-references-container{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        justify-items: center;
+        margin: auto auto;
+
+        h2{
+            text-align: center;
+            text-decoration: underline;
+        }
+        
+        table {
+            display: block;
+            width: 100%;
+            max-width: 800px;
+            max-height: 30vh;
+            overflow-y: auto;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.1); 
+            color: white; 
+        }
+        
+        table th,
+        table td {
+            padding: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2); 
+        }
+        
+        table th {
+            background-color: rgba(255, 255, 255, 0.2); 
+        }
+        
+        table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1); 
+        }
+        
+        table tr:hover {
+            background-color: rgba(255, 255, 255, 0.3); 
+        }
+        
+        table caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: white; 
+        } 
+    }
+
+    #admin-add-notification-container, #admin-add-portfolio-entry-container, #admin-add-blog-post-container, #admin-update-profile-image, #admin-create-user{
+        display: flex;
+        width: 100%;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: black;
+            margin: 20px auto 20px auto;
+            border-radius: 10px;
+
+            input, textarea{
+                font-size: 1.2rem;
+                width: 90%;
+                border: none;
+                margin: 5px 0px 5px 0px;
+                border-radius: 10px;
+                padding: 3px;
+                background-color: rgba(255, 255, 255, 0.200);
+                font-family: "Platypi", serif;
+                font-optical-sizing: auto;
+            }
+
+            select{
+                font-size: 1.2rem;
+                width: 60%;
+                border: none;
+                margin: 5px 0px 5px 0px;
+                border-radius: 10px;
+                padding: 3px;
+                background-color: rgba(255, 255, 255, 0.200);
+                font-family: "Platypi", serif;
+                font-optical-sizing: auto;
+
+            }
+
+            option{
+                color: black;
+            }
+
+            input::placeholder{
+                color: white;
+            }
+
+            select{
+                color: white;
+            }
+
+            textarea::placeholder{
+                color: white;
+            }
+        }
+    }
+}
